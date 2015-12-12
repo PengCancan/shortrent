@@ -7,6 +7,7 @@ import java.sql.Statement;
 
 import com.ruanko.dao.AdminDao;
 import com.ruanko.model.Admin;
+import com.ruanko.model.User;
 import com.ruanko.util.BaseDao;
 
 public class AdminDaoImpl implements AdminDao {
@@ -43,6 +44,12 @@ public class AdminDaoImpl implements AdminDao {
 			e.printStackTrace();
 
 		}
+		return null;
+	}
+
+	@Override
+	public User user_del(User user) {
+		// TODO Auto-generated method stub
 		return null;
 	}
 }
