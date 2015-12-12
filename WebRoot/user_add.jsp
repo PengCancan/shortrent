@@ -119,7 +119,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<TD colSpan=2 height=35></TD>
 				</TR>
 				<tr>
-					<td>
+					<td> 
 						用户名：
 					</td>
 					<td>
