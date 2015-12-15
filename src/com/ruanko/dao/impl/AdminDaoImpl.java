@@ -39,7 +39,6 @@ public class AdminDaoImpl implements AdminDao {
 				connection.close();
 				return rtn;
 			}
-
 		} catch (Exception e) {
 			e.printStackTrace();
 

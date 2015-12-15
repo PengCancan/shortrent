@@ -24,7 +24,6 @@ public class UserAction extends ActionSupport {
 		user.setName(this.name);
 		user.setPassword(this.password);
 		user.setSex(1);
-		System.out.println(user.getName());
 		if (user.getName() != null) {
 			UserService userService = new UserService();
 			userService.user_add(user);

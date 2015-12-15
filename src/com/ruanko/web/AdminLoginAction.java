@@ -1,7 +1,6 @@
 package com.ruanko.web;
 
-import javax.naming.ldap.ManageReferralControl;
-
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.ruanko.model.Admin;
 import com.ruanko.service.AdminService;
@@ -24,6 +23,7 @@ public class AdminLoginAction extends ActionSupport {
 	Admin admin = adminService.checkAdminLogin(manager);
 	
 	if(admin != null){
+		ActionContext.getContext().put("admin", manager);
 		return SUCCESS;
 	}
 	return "fail";
@@ -40,5 +40,5 @@ public class AdminLoginAction extends ActionSupport {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+
 }

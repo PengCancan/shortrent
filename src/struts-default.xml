@@ -7,14 +7,18 @@
     <!-- 定义处理请求URL为login.action的Action -->
         <action name="login" class="com.ruanko.web.AdminLoginAction" method="execute">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->
-            <result name="success">/success.jsp</result>
+            <result name="success">/adminShow.jsp</result>
             <result name="fail">/admin/adminlogin.jsp</result>
         </action>
         
         <action name="user_add" class="com.ruanko.web.UserAction" method="execute">
         <!-- 定义处理结果字符串和资源之间的映射关系 -->
-            <result name="success">/success.jsp</result>
+            <result name="success">/adminShow.jsp</result>
             <result name="fail">/admin/adminlogin.jsp</result>
+        </action>
+        
+        <action name="user_*" class="com.ruanko.web.UserManagementAction" method="user_{1}">
+        	<result name="{1}">/user_{1}.jsp</result>
         </action>
     </package>
 </struts>

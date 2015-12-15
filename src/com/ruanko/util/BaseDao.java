@@ -35,7 +35,7 @@ public class BaseDao {
 	}
 	
 
-	protected void closeAll(Connection connection, Statement statement, ResultSet resultSet) {
+	public static void closeAll(Connection connection, Statement statement, ResultSet resultSet) {
 		try {
 			if (resultSet != null && !resultSet.isClosed()) {
 				resultSet.close();
