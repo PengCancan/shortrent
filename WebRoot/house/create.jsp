@@ -84,6 +84,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 									
 									
 									<div>
+									
 										房屋类型：
 										<select>
 											<option style="width:250px">XX1</option>
