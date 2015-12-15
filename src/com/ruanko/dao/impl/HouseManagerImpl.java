@@ -22,7 +22,7 @@ public class HouseManagerImpl implements HouseManager {
 		try {
 			if (conn != null && pageSize > 0 && pageNow > 0) {
 				String sql = "select * from t_house order by id limit " + (pageNow * pageSize - pageSize) + ","
-						+ pageSize;
+						+ pageSize + "where t_house.state=1";
 				pstmt = conn.prepareStatement(sql);
 				rs = pstmt.executeQuery();
 			}

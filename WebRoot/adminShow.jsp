@@ -55,8 +55,7 @@ a:link {
 	<div region="north" split="false"
 		style="background: none no-repeat; height: 50px;">
 		<div align="left">
-			<font size="4" color="#0000ff" face="华文楷体">欢迎您 <s:property
-					value="username" /></font><a href="<%=path%>">回到首页</a>
+			<font size="4" color="#0000ff" face="华文楷体">欢迎您 <s:property value="#admin.username" /></font><a href="<%=path%>">回到首页</a>
 		</div>
 	</div>
 	<div region="west" split="false" title="菜单"
