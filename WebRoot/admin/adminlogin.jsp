@@ -28,7 +28,7 @@
 
 <body>
 	<center>
-		<s:form action="login" method="post" namespace="/">
+		<s:form action="login" method="post" namesapce="/">
 			<table width="295" height="88">
 				<tr>
 					<TD><TABLE height=600 cellPadding=0 width=240 border=0>

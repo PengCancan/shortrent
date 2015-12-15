@@ -29,7 +29,7 @@ public class UserAction extends ActionSupport {
 			userService.user_add(user);
 			return SUCCESS;
 		}else
-			return null;
+			return "fail";
 	}
 
 	public int getId() {

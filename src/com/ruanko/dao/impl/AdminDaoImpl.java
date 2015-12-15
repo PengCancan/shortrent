@@ -18,7 +18,7 @@ public class AdminDaoImpl implements AdminDao {
 
 		Connection connection = BaseDao.getConnection();
 		Statement statement;
-
+		Admin rtn = null;
 		try {
 
 			statement = connection.createStatement();
@@ -30,7 +30,7 @@ public class AdminDaoImpl implements AdminDao {
 			ResultSet rs = pstmt.executeQuery();
 
 			if (rs.next()) {
-				Admin rtn = new Admin();
+				rtn = new Admin();
 				rtn.setId(rs.getInt("id"));
 				rtn.setUsername(rs.getString("name"));
 				rtn.setPassword(rs.getString("password"));
@@ -41,9 +41,8 @@ public class AdminDaoImpl implements AdminDao {
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
-
 		}
-		return null;
+		return rtn;
 	}
 
 	@Override

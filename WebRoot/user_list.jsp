@@ -3,8 +3,7 @@
 <%@ taglib uri="/struts-tags" prefix="s"%>
 <%
 	String path = request.getContextPath();
-	String basePath = request.getScheme() + "://"
-			+ request.getServerName() + ":" + request.getServerPort()
+	String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 %>
 
@@ -21,7 +20,8 @@
 #table td {
 	border: 1px solid black;
 }
-#table td input{
+
+#table td input {
 	border: 1px solid blue;
 	width: 110px;
 }
@@ -39,8 +39,8 @@
 				<td>图像</td>
 				<td>操作</td>
 			</tr>
-			<s:iterator value="#users" >
-					
+			<s:iterator value="#users">
+
 				<tr>
 					<td><input type="text" value="<s:property value="name" />" />
 					</td>
@@ -54,7 +54,8 @@
 					</td>
 					<td><input type="text" value="<s:property value="picture" />" />
 					</td>
-					<td><button>修改</button><a href="<%=path%>/user_del.action?id=<s:property value="id" />">删除</a></td>
+					<td><button>修改</button>
+						<a href="<%=path%>/user_del.action?id=<s:property value="id" />">删除</a></td>
 
 					<!-- 					<td><s:property value="sex" /></td>
 					<td><s:property value="mobile" /></td>

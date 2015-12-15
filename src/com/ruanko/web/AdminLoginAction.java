@@ -13,21 +13,6 @@ public class AdminLoginAction extends ActionSupport {
 	private static final long serialVersionUID = 1L;
 	private String username;
 	private String password;
-	
-	@Override
-	public String execute(){ 
-	Admin manager = new Admin();
-	manager.setUsername(this.username);
-	manager.setPassword(this.password);
-	AdminService adminService = new AdminService();
-	Admin admin = adminService.checkAdminLogin(manager);
-	
-	if(admin != null){
-		ActionContext.getContext().put("admin", manager);
-		return SUCCESS;
-	}
-	return "fail";
-	}
 	public String getUsername() {
 		return username;
 	}
@@ -41,4 +26,17 @@ public class AdminLoginAction extends ActionSupport {
 		this.password = password;
 	}
 
+	@Override
+	public String execute(){ 
+	Admin manager = new Admin();
+	manager.setUsername(this.username);
+	manager.setPassword(this.password);
+	AdminService adminService = new AdminService();
+	Admin admin = adminService.checkAdminLogin(manager);
+	if(admin != null && manager.getUsername().equals(admin.getUsername())){
+		ActionContext.getContext().put("admin", manager);
+		return SUCCESS;
+	}else
+		return "fail";
+	}
 }
