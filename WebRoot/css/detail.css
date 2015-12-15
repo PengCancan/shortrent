@@ -1,0 +1,169 @@
+/*---------- LAYOUT ----------*/
+#cols {
+    float: left;
+    background:#f8f8f8;
+    clear: both;
+}
+#room-tit {
+    width:955px;
+    padding:2px 15px;
+}
+#left-detail {
+    float:left;
+    width: 650px;
+    padding:10px;
+}
+#right-detail {
+    float:right;
+    width: 295px;
+    padding:10px;
+}
+
+/*-------- room-tit ---------*/
+#room-tit p a{
+    color: #0082CB;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+#room-tit h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 35px;
+}
+#room-tit h4 {
+    color: #AAAAAA;
+    margin-top: 10px;
+}
+
+/*--------- left-detail ----------*/
+.room-fla {
+    float: left;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    margin-bottom: 25px;
+    clear:both;
+}
+
+.big-img {
+    width: 636px;
+    border: 1px solid #DDDDDD;
+    padding: 3px;
+    margin: 2px;
+}
+
+#left-detail ul {
+    margin:0px 0px 46px 0px;
+    padding:0;
+}
+
+#left-detail ul li img{
+    float: left;
+    height: 40px;
+    width: 40px;
+    padding: 2px;
+    margin: 0 2px;
+}
+
+#left-detail .detail {
+    float: left;
+    width: 66%;
+    text-align:left;
+}
+
+#left-detail .info-table {
+    float: right;
+    width: 33%;
+}
+#left-detail .info-table tr td{
+    color: #449BA9;
+    height: 25px;
+    line-height: 25px;
+    padding: 2px 0;
+}
+.info-table .odd {
+    background: #EAF3F5;
+}
+
+/*-------- right-detail --------*/
+/* 预订房屋 */
+#yd h2{
+    text-align: center;
+    font-size: 42px;
+    margin: 10px 0;
+}
+#yd .text-order{
+    float: left;
+    height: 32px;
+    width: 258px;
+    border: 1px solid #DDDDDD;
+    font-size: 24px;
+    margin: 10px 18px;
+}
+#yd .yd-btn{
+    float: left;
+    background: url("../images/btn-icon.png") no-repeat scroll -8px -12px transparent;
+    border: 0 none;
+    height: 40px;
+    width: 258px;
+    margin: 10px 18px;
+}
+#yd span{
+    float: left;
+    height: 20px;
+    width: 217px;
+    border: 1px solid #f1f1f1;
+    background: url("../images/onError.gif") no-repeat scroll 0 0 #FFF2E9;
+    font-size: 14px;
+    margin: 10px 18px;
+    padding: 1px 20px;
+}
+/* 房东信息 */
+#person img{
+    border: 1px solid #E5E5E5;
+    height: 225px;
+    margin: 17px 30px 0;
+    padding: 3px;
+    width: 225px;
+}
+#person h2{
+    text-align: center;
+    font-size: 18px;
+}
+
+#person a {
+    float: left;
+    height: 37px;
+    width: 228px;
+    background: url("../images/contact-btn.png") no-repeat scroll 0 0 transparent;
+    margin: 17px 32px;
+}
+/* 房东的其他房间 */
+#same-room h2{
+    font-size: 18px;
+    padding: 10px 17px 0;
+}
+
+#same-room table {
+    width: 100%;
+    padding: 10px;
+}
+#same-room table tr td{
+    padding: 5px 2px;
+    border-top: 1px solid #F1F1F1;
+}
+#same-room table tr td span{
+    color: #EC008C;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#same-room table tr td img{
+    width: 120px;
+    height: 80px;
+    padding: 2px;
+    border: 1px solid #F1F1F1;
+}

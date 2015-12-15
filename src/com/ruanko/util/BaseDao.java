@@ -19,7 +19,7 @@ public class BaseDao {
 	private static final String DATABASE_USERNAME = "root";
 	
 
-	private static final String DATABASE_PASSWORD = "1234";
+	private static final String DATABASE_PASSWORD = "123";
 
 
 	public static Connection getConnection() {
