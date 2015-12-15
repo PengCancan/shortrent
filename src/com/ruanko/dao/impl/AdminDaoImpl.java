@@ -3,7 +3,6 @@ package com.ruanko.dao.impl;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.Statement;
 
 import com.ruanko.dao.AdminDao;
 import com.ruanko.model.Admin;
@@ -17,11 +16,9 @@ public class AdminDaoImpl implements AdminDao {
 		String sql = "select * from t_manager where name = ? and password = ? " ;
 
 		Connection connection = BaseDao.getConnection();
-		Statement statement;
 		Admin rtn = null;
 		try {
 
-			statement = connection.createStatement();
 
 			PreparedStatement pstmt = connection.prepareStatement(sql);
 			pstmt.setString(1, admin.getUsername());

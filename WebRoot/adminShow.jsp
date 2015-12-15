@@ -47,6 +47,7 @@ a:link {
 		});
 	}
 </script>
+
 </head>
 
 <body class="easyui-layout">
@@ -70,11 +71,10 @@ a:link {
 			</div>
 			<div title="房屋管理" iconCls="icon-dir">
 				<center>
-					<br /> <a href="javascript:addTab('未审核房屋','housedshshow?id=	')">未审核房屋</a>
-					<br /> <br /> <a
-						href="javascript:addTab('已发布房屋','houseyfbshow?id=	')">已通过审核房屋</a>
-					<br /> <br /> <a
-						href="javascript:addTab('审核不合格房屋','houseshjjshow?id=	')">审核不合格房屋</a>
+					<br /> <a
+						href="javascript:addTab('未审核房屋','<s:url value="allUncheckedHouse_list.action"/>')">未审核房屋</a>
+					<br /> <br /> <a href="javascript:addTab('已发布房屋','	')">已通过审核房屋</a>
+					<br /> <br /> <a href="javascript:addTab('审核不合格房屋','')">审核不合格房屋</a>
 					<br />
 				</center>
 			</div>
