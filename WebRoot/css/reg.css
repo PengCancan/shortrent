@@ -17,7 +17,9 @@
     margin: 50px 0;
     padding: 0 110px;
     position: relative;
-    width: 340px;
+   /*  width: 340px; */
+   width: 100%; 
+   
 }
 .reg-left dl {
     color: #AAAAAA;
@@ -77,12 +79,15 @@ element.style {
     text-align: center;
     width: 260px;
 }
-.clear {
+
+
+/*修改20151215：去除中间分割线*/
+/* .clear {
     clear: both;
     float: none;
     height: 0;
     overflow: hidden;
-}
+} */
 .validatorInit {
     background: url("../images/onInit.gif") no-repeat scroll 0 0 transparent;
 }

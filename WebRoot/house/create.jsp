@@ -92,13 +92,29 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 											<option style="width:250px">XX3</option>
 											<option style="width:250px">XX4</option>
 											<option style="width:250px">XX5</option>
-										</select>
-																			
+										</select>									
 									
 									
 									</div>
 									
 									
+									
+									<div>									
+										<span id="star_color">*</span>面积：
+										<input name="area" type="text"/>平方米
+										
+										<span id="star_color">*</span>使用规则：							
+										<textarea rows="3" cols="15"></textarea>																		
+									</div>
+									
+									
+									<div>
+										可住人数：
+										<input name"peopleNum"/>		
+										
+									
+									
+									</div>
 										
 
 									
