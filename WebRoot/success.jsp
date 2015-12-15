@@ -6,6 +6,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+<<<<<<< HEAD
   <head>
     <base href="<%=basePath%>">
     
@@ -26,3 +27,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     This is my JSP page. <br>
   </body>
 </html>
+=======
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	I a
+</body>
+</html>
+>>>>>>> 72d3dbfde887d0e03fbbd97e1d376aaa6ff24c31
