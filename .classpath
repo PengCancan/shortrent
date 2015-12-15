@@ -15,9 +15,13 @@
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/commons-io-2.2.jar"/>
 	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mysql-connector-java-commercial-5.1.30-bin.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="D:/Softwares/myeclipse/Common/plugins/com.genuitec.eclipse.j2eedt.core_10.0.0.me201110301321/data/libraryset/EE_5/javaee.jar"/>
 	<classpathentry kind="lib" path="D:/Softwares/myeclipse/Common/plugins/com.genuitec.eclipse.j2eedt.core_10.0.0.me201110301321/data/libraryset/EE_5/jsf-api.jar"/>
 	<classpathentry kind="lib" path="D:/Softwares/myeclipse/Common/plugins/com.genuitec.eclipse.j2eedt.core_10.0.0.me201110301321/data/libraryset/EE_5/jsf-impl.jar"/>
 	<classpathentry kind="lib" path="D:/Softwares/myeclipse/Common/plugins/com.genuitec.eclipse.j2eedt.core_10.0.0.me201110301321/data/libraryset/EE_5/jstl-1.2.jar"/>
+=======
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v6.0"/>
+>>>>>>> temp
 	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
 </classpath>
